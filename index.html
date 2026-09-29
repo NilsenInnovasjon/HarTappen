@@ -86,6 +86,9 @@ a{color:inherit}
   .hero-foot{grid-template-columns:1fr;margin-top:0;padding-bottom:1rem}
 }
 /* Service ribbon */
+.ribbon-wrap{overflow:hidden;padding:1.25rem 0 2rem}
+html,body{overflow-x:hidden}
+@supports (overflow:clip){html,body{overflow-x:clip}}
 .ribbon{background:var(--red);color:#fff;overflow:hidden;transform:rotate(-2deg);margin:1rem -2rem 0;padding:1rem 0;box-shadow:0 14px 30px -18px rgba(217,11,69,.7)}
 .track{display:flex;width:max-content;animation:scroll 32s linear infinite}
 .track span{font-family:"Josefin Sans",Futura,sans-serif;text-transform:uppercase;font-weight:600;letter-spacing:.1em;font-size:clamp(1.1rem,2.4vw,1.6rem);
@@ -162,7 +165,7 @@ footer{padding:2rem 0 2.5rem;font-size:.85rem;color:var(--muted);text-align:cent
 </head>
 <body>
 
-<div class="draft">Utkast til ny nettside, laget av [Ditt firmanavn]. Ikke Hårtåppens offisielle side.</div>
+<div class="draft">Forslag til ny nettside for Hårtåppen, laget av VLN. Ikke publisert ennå.</div>
 
 <div class="wrap">
   <header class="top">
@@ -206,7 +209,7 @@ footer{padding:2rem 0 2.5rem;font-size:.85rem;color:var(--muted);text-align:cent
   </div>
 </div>
 
-<div class="ribbon" aria-hidden="true"><div class="track" id="track"></div></div>
+<div class="ribbon-wrap"><div class="ribbon" aria-hidden="true"><div class="track" id="track"></div></div></div>
 
 <section>
   <div class="wrap">
